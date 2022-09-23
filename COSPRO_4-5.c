@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int solution(int calorie[], int calorie_len) {
-    int min_cal = 713; //수정
+    int min_cal = calorie[0]; //수정
     int answer = 0;
     for(int i=0; i<calorie_len; i++) {
         if(calorie[i] > min_cal)
