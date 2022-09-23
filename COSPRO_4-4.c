@@ -5,8 +5,8 @@
 int solution(int classes[], int classes_len, int m) {
     int answer = 0;
     for(int i=0; i<classes_len; i++) {
-        answer += classes[i]  m; //빈칸 
-        if (classes[i]  m != 0) //빈칸
+        answer += classes[i] / m; //빈칸
+        if (classes[i] - m != 0) //빈칸
             answer++;
     }
     return answer;
