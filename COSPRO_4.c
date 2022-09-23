@@ -11,7 +11,7 @@ int* solution(char* schedule[], int schedule_len) {
     int* answer = (int*)malloc(sizeof(int)*x_count);
     for(int i=0, j=0; i<10; i++) {
         if(schedule[i][0] == 'X') {
-             answer[j++] = i+1;
+             answer[j++] = i+1; //빈칸
         }
     }
     return answer;
