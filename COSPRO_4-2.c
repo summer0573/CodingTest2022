@@ -37,9 +37,9 @@ int func_c(int scores[3]) {
 int solution(int scores[][3], int scores_len) {
     int answer = 0;
     for(int i = 0; i<scores_len; i++) {
-        int passed = func_c(scores[i]);
-        int non_passed = func_b(scores[i]);
-        answer += func_a(passed, non_passed);
+        int passed = func_c(scores[i]); //빈칸
+        int non_passed = func_b(scores[i]); //빈칸
+        answer += func_a(passed, non_passed); //빈칸
     }
     return answer;
 }
