@@ -36,11 +36,11 @@ int func_c(char* card, int card_length) {
 }
 
 int* solution(int n, char* bundle) {
-    char* a_cards = func_a(bundle, , );
-    char* b_cards = func_a(bundle, , );
-    int a_score = func_c(, );
-    int b_score = func_c(, );
-    int* answer = func_b(, );
+    char* a_cards = func_a(bundle,0,n);
+    char* b_cards = func_a(bundle,1,n);
+    int a_score = func_c(a_cards,n );
+    int b_score = func_c(b_cards,n );
+    int* answer = func_b(a_score, b_score);
     return answer;
 }
 
